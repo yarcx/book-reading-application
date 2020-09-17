@@ -1,13 +1,103 @@
+*{
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Montserrat', sans-serif;
+  background-color:  rgba(70, 16, 70, 0.8);
+  background-image: url('books image.jpg');
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.navbar{
+  background-color: rgb(122, 23, 122);
+  opacity: 0.9;
+  width: 70%;
+  max-width: 90%;
+  height: 10rem;
+  margin: 3rem auto 0 auto;
+  padding: 0.5rem;
+  text-align: center;
+  color: white;
+}
+
+.navbar h1{
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.BookList{
+  height: auto;
+  width: 70%;
+  max-width: 90%;
+  margin:0 auto;
+  padding: 1rem;
+  background-color: rgb(49, 6, 49);
+  opacity: 0.9;
+}
+
+.BookList ul{
+  list-style-type: none;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.BookList ul .Book{
+  background-color: rgb(122, 23, 122);
+  margin-bottom: 0.9rem;
+  border-radius: 0.3rem;
+  padding: 1rem;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px 1px rgb(122, 23, 122);
+}
+
+
+.BookList ul .Book .Book-title{
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 600;
+}
+
+
+.BookList ul .Book .Book-author{
+  padding-top: 0.8rem;
+  font-size: 1rem;
+  color: white;
+}
+
+.Book:hover{
+  opacity: 0.6;
+  text-decoration: line-through;
+  text-decoration-color: #fff;
+}
+
+form input[type="text"]{
+  display: block;
+  width: 90%;
+  padding: 0.7rem;
+  margin: 0 auto 0.8rem auto;
+}
+
+form button{
+  display: block;
+  max-width: 70%;
+  padding: 0.7rem;
+  margin: 0 auto 0.8rem auto;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: purple;
+}
+
+.empty{
+  max-width: 90%;
+  margin: 1rem auto;
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
 }
